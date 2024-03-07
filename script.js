@@ -1,5 +1,15 @@
+
+randomStr = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+
+
 function makeid(l) {
-  // write your code here
+	result = "";
+  for(let i=0; i<l; i++)
+	{
+		result+=randomStr.charAt(Math.floor(Math.random()*62));
+	}
+	return result;
 }
 
 // Do not change the code below.
